@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About — ArchiTech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="page">
+        <div class="blueprint"><svg viewBox="0 0 1500 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g stroke="currentColor" stroke-width="1.2">
+                    <path d="M760 105H1380V760H760V105Z" />
+                    <path d="M805 150H1100V390H805V150Z" />
+                    <path d="M1140 150H1335V390H1140V150Z" />
+                    <path d="M805 435H965V715H805V435Z" />
+                    <path d="M1005 435H1335V715H1005V435Z" />
+                    <path d="M930 150V390M1140 270H1335M1100 150V390M885 435V715M1165 435V715" />
+                    <path d="M740 105L1080 35L1410 105M740 760L1080 835L1410 760M1080 35V835" />
+                    <path d="M620 175L710 85L800 175M610 185L710 85L810 185M520 770L710 585L900 770" />
+                    <circle cx="960" cy="270" r="58" />
+                    <path d="M960 212V328M902 270H1018" />
+                </g>
+                <g stroke="currentColor" stroke-width=".7" stroke-dasharray="8 8">
+                    <path d="M760 80V780M730 105H1410M1080 80V850M730 250H1410M730 550H1410" />
+                </g>
+            </svg></div>
+        <div class="grid"></div>
+        <header>
+            <nav class="nav nav-left"><a class="" href="index.html">Home</a><a class="active"
+                    href="about.html">About</a><a class="" href="technology.html">Technology</a></nav>
+                      <a class="logo" href="index.html">
+       <img src="logo.png" alt="ArchiTech Logo">
+   </a>
+            <nav class="nav right"><a href="login.html">Log in</a><a class="" href="signup.html">Sign up</a><button
+                    class="theme" id="theme" aria-label="Toggle dark mode">☼</button><button class="hamb" id="hamb"
+                    aria-label="Open menu">☰</button></nav>
+        </header>
+        <div class="mobile" id="mobile"><a href="index.html">Home</a><a href="about.html">About</a><a
+                href="technology.html">Technology</a><a href="login.html">Log in</a><a href="signup.html">Sign up</a>
+        </div>
+        <section class="section container">
+            <div class="two">
+                <div>
+                    <div class="eyebrow">The idea</div>
+                    <h1>Where architecture meets intelligence.</h1>
+                </div>
+                <div class="panel"><span class="kicker">ArchiTech</span>
+                    <p class="lead">ArchiTech is an AI × architecture platform concept focused on making computational
+                        intelligence useful inside the creative design process.</p>
+                    <p class="muted">Architects explore more possibilities, make informed decisions faster, and keep
+                        their creative direction at the center.</p>
+                    <div class="actions"><a class="btn primary" href="workspace.html">Enter workspace ↗</a><a
+                            class="btn secondary" href="technology.html">See technology</a></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container footer"><span>© 2026 ArchiTech</span><span>AI × Architectural Design</span></div>
+        </footer>
+    </main>
+    <script>const r = document.documentElement, t = document.getElementById('theme'), h = document.getElementById('hamb'), m = document.getElementById('mobile'); function setTheme(x) { r.dataset.theme = x; localStorage.setItem('architech-theme', x); t.textContent = x === 'dark' ? '◐' : '☼' } setTheme(localStorage.getItem('architech-theme') || 'light'); t.onclick = () => setTheme(r.dataset.theme === 'dark' ? 'light' : 'dark'); h.onclick = () => m.classList.toggle('open');</script>
+       <script src="api.js"></script>
+</body>
+
+</html>
